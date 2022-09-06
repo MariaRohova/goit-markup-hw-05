@@ -22,9 +22,21 @@
             <a href="./index.html" class="logo-web">Web<span class="logo-studio">Studio</span> </a>
         </div>
             <ul class="nav">
-               <li class="nav-list">  <a href="./index.html" class="nav-link" > Студія</a>         </li>
-               <li class="nav-list">  <a href="./portfolio.html" class="nav-link"> Портфоліо</a>         </li>
-               <li class="nav-list">  <a href="" class="nav-link"> Контакти</a>         </li>
+               <li class="nav-list">  
+                <a href="./index.html" class="nav-link active">
+                    <div class="nav-line"> Студія </div>
+                </a>
+            </li>
+               <li class="nav-list">  
+                <a href="./portfolio.html" class="nav-link"> 
+                    <div class="nav-line"> Портфоліо </div>
+                    </a>         
+            </li>
+               <li class="nav-list">  
+                <a href="" class="nav-link"> 
+                    <div class="nav-line"> Контакти</div> 
+                </a>         
+            </li>
            </ul>
         </nav>
             <ul class="contacts">
@@ -51,8 +63,9 @@
 
 <section class="hero">
         <h1 class="hero-title"> Ефективні рішення для вашого бізнесу </h1>
-        <button  class="button" type="button" onclick="" >Замовити послугу</button>
-            
+        <button data-modal-open  class="button" type="button" onclick="" >Замовити послугу</button>
+
+       <script src="./js/modal.js"></script>    
 </section>
 
 
@@ -113,12 +126,19 @@
     <h2 class="work">Чим ми займаємося</h2>
     <div class="container">
         <ul class="work-flex">
-            <li class="work-item"> <img src="./goit-markup-hw-01/images/img-1.jpg" alt="Чим ми займаємося" width="370"> </li>
-            <li class="work-item"> <img src="./goit-markup-hw-01/images/img-2.jpg" alt="Чим ми займаємося" width="370"> </li>
-            <li class="work-item"> <img src="./goit-markup-hw-01/images/img-3.jpg" alt="Чим ми займаємося" width="370"> </li>
+            <li class="work-item"> <img src="./goit-markup-hw-01/images/img-1.jpg" alt="Чим ми займаємося" width="370">
+            <div class="work-decor"> Десктопні додатки </div>
+            </li>
+            <li class="work-item"> <img src="./goit-markup-hw-01/images/img-2.jpg" alt="Чим ми займаємося" width="370">
+            <div class="work-decor"> Мобільні додатки </div>
+            </li>
+            <li class="work-item"> <img src="./goit-markup-hw-01/images/img-3.jpg" alt="Чим ми займаємося" width="370">
+            <div class="work-decor"> Дизайнерські рішення </div>
+            </li>
         </ul>
+    </div>
 </section>
-</div>
+
 
 
 
@@ -276,7 +296,7 @@
             </div>
             </li>
         </ul>
-       
+        </div>
     </section>
 
     <section class="section">
@@ -382,5 +402,17 @@
             </address>    
         </div>
     </footer>
+    <div class="container">
+        <div class=" backdrop is-hidden" data-modal>
+            <div class="modal">
+                <button class="modal-btn" type="button" data-modal-close>
+                    <svg class="button-close" widht="18" height="18">
+                        <use href="./img/symbol-defs.svg#icon-close-black-18dp-2-1"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+<script src="./js/modal.js"> </script> 
 </body>
 </html>
