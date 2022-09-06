@@ -115,7 +115,7 @@ margin: 32px 0;
 
     content: "";
     left: 0;
-    bottom: -34px;
+    bottom: -35px;
     width: 100%;
     height: 4px;
     background: rgba(33, 150, 243, 1);
@@ -169,48 +169,45 @@ position: relative;
     align-items: center;
     color: inherit;
     }
-    
-.icon-mail{
-    width: 16px;
-    height: 12px;
-
-}
-.icon-phone{
-   width: 10px;
-   height: 16px;
-   
-}
-
-
-
-.contact-mail, .contact-phone{
-    text-decoration: none;
-    fill: currentColor;
-    
-}
 
 .contact-mail{
     color:  #757575;
     margin-right: 30px;
-}
+    }
 
 .contact-phone{
     color: #757575; 
-}
+    }
+    
+.icon-mail{
+    width: 16px;
+    height: 12px;
+    }
+
+.icon-phone{
+    width: 10px;
+    height: 16px;
+    }
+
+.contact-mail, 
+.contact-phone {
+    text-decoration: none;
+    fill: currentColor;
+    }
 
 
 
 /*HERO*/
 
 .hero{
-padding: 200px 0;
-background-image: linear-gradient(
-    rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4)), 
-url("../img/hero-Img.jpg");
-background-repeat: no-repeat;
-background-size: cover;
-max-width: 1600px;
+    padding: 200px 0;
+    background-image: linear-gradient(
+         rgba(47, 48, 58, 0.4),
+         rgba(47, 48, 58, 0.4)), 
+         url("../img/hero-Img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 1600px;
 }
 
 .hero-title{
